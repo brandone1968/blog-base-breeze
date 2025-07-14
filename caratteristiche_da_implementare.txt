@@ -1,0 +1,71 @@
+Analisi Funzionale per l'Applicazione Blog in Laravel
+Questo documento delinea le funzionalità essenziali per lo sviluppo di un'applicazione blog basata sul framework Laravel, suddividendole in aree accessibili agli utenti non autenticati (pubbliche) e agli utenti autenticati (amministrazione).
+
+Area Pubblica (Accesso non autenticato)
+L'area pubblica del blog sarà accessibile a chiunque e presenterà i contenuti principali del sito.
+
+Homepage (URL: http://localhost/):
+
+Visualizzazione di un elenco dei post disponibili.
+
+Dashboard in alto, composta da:
+
+Titolo del Blog: Posizionato a sinistra. Cliccando su di esso si verrà reindirizzati alla homepage (http://localhost/).
+
+Navigazione: Posizionata a destra, con i seguenti link:
+
+Home: Reindirizza alla homepage (http://localhost/).
+
+About: Reindirizza a una pagina di descrizione del blog.
+
+Visualizzazione Post Completo:
+
+Dall'elenco dei post sulla homepage, sarà possibile cliccare su un singolo post per visualizzarne il contenuto completo.
+
+Una volta visualizzato il post completo, sarà presente un'opzione o un link per tornare indietro all'elenco dei post.
+
+Area Amministrazione (Accesso autenticato)
+L'area di amministrazione sarà protetta da autenticazione e permetterà la gestione completa dei contenuti del blog.
+
+Pagina di Login (URL: http://localhost/login):
+
+Accesso alla pagina di login standard di Laravel, dove gli utenti registrati potranno inserire le proprie credenziali.
+
+Dashboard Amministrativa (Accesso dopo il login):
+
+Una volta effettuato il login, l'utente verrà reindirizzato alla dashboard amministrativa.
+
+Messaggio di Benvenuto: Verrà visualizzato un messaggio che indica che l'utente è attualmente loggato.
+
+Menu di Navigazione Amministrativo: Saranno presenti le seguenti sezioni per la gestione dei contenuti:
+
+Posts:
+
+Elenco dei post: Visualizzazione di tutti i post presenti nel blog.
+
+Gestione post: Possibilità di cancellare, modificare e aggiungere nuovi post.
+
+Categories:
+
+Elenco delle categorie: Visualizzazione di tutte le categorie definite per i post.
+
+Gestione categorie: Possibilità di cancellare, modificare e aggiungere nuove categorie.
+
+Tags:
+
+Elenco dei tag: Visualizzazione di tutti i tag associati ai post.
+
+Gestione tag: Possibilità di cancellare, modificare e aggiungere nuovi tag.
+
+
+localhost => vedo elenco dei post con una dashboard con dashboard con Titolo a sin e Home | About a destra
+Titolo e Home rimandano a localhost
+About rimanda a una pagina di descrizione
+dall-elenco dei post possibilità di visualizzarlo in modo completo e tornate indietro all'elenco dei posts
+
+http://localhost/login rimanda al login di laravel
+il login rimanda alla dashboard laravel con
+Dashboard => ti dice che sei loggato
+Posts => elenco dei post con possibilità di cancellarli e modificarli e aggiungere post
+Categories => elenco categorie con possibilità di cancellarli e modificarli e aggiungere post
+Tags => elenco categorie con possibilità di cancellarli e modificarli e aggiungere post
